@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/talwind.min.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Logo</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:underline ">bosh sahifa</a></li>
+                    <li><a href="#about" class="hover:underline ">biz haqimizda</a></li>
+                    <li><a href="#services" class="hover:underline ">hizmatlar</a></li>
+                    <li><a href="#contact" class="hover:underline ">kontaktlar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="bg-gradient-to-r from-green-400 to-blue-500 text-white py-20" >
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Bizning Audi shopga xush kelibsiz</h2>
+            <p class="text-lg mb-8">Bu TalwindCSS yordamida yaratilgan ajoyib landing page.</p>
+            <a href="#services" class="bg-white text-blue-500 px-6 py-3 rounded-full shadow-lg hover:bg-gray-200">Boshlash</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Bizning mashinalar</h2>
+            <p class="text-lg mb-8">Biz jamoa sifatida  eng yuqori darajadagi xizmatlarini  taqdim etamiz.</p>
+            <img src="Без названия (1).jpg" class="mx-auto rounded-lg shadow-lg" alt="">
+        </div>
+    </section>
+
+    <section id="about" class="bg-gray-200 py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">xizmatlarimiz</h2>
+            <div class="grid grid-cols md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg text-center">
+                    <img src="Без названия.jpg" alt="" class="mb-4 mx-auto rounded">
+                    <h3 class="text-xl font-bold mb-4">Mashina 1</h3>
+                    <p class=" mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Volupsls.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Batafsil</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="Без названия (2).jpg" class="mb-4 mx-auto rounded" alt="">
+                    <h3 class="text-xl font-bold mb-4">Mashina 2</h3>
+                    <p class=" mb-4">Sed do eismod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Batafsil</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="Без названия (3).jpg" class="mb-4 mx-auto rounded" alt="">
+                    <h3 class="text-xl font-bold mb-4">Mashina 3</h3>
+                    <p class=" mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Batafsil</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">kontaklar</h2>
+            <p class="text-lg mb-8">Biz bilan bog'lanishdan tortinmang.</p>
+            <a href="malito:info@example.com" class="bg-blue-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-600"></a>
+        </div>
+    </section>
+
+    <footer class="bg-blue-500 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy;2024 Kompamiya nomi. Barcha huquqlar himoyalangan  </p>
+        </div>
+    </footer>
+</body>
+</html>

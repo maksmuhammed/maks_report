@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/talwind.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #modalCheckbox{
+                display: none;
+            }
+            #modalCheckbox:checked ~ #modal{
+                display: flex;
+            }
+        </style>
+    </head>
+    <body >
+        <div class="w-[1350px] h-full">
+            <div class=" w-full h-[100px]  bg-[#133470] flex items-center justify-around">
+                <img src="img/Link → site-logo.svg (1).svg" alt="">
+                <nav class="relative">
+                    <a class="text-white relative right-[100px] focus:w-full focus:h-full focus:bg-black" href="#">Держателям карт</a>
+                    <a class="text-white relative right-[80px]" href="#">Для бизнеса</a>
+                    <a class="text-white relative right-[60px]" href="#">Банкам и партнерам</a>
+                    <a class="text-white relative right-[30px]" href="#">Пресс-служба</a>
+                    <a class="text-white relative right-[10px]" href="#">Карьера</a>
+                </nav>
+                <div class="flex justify-between items-center relative left-[150px]">
+
+                    <div class="w-[104px] h-[45px] relative right-[190px] border border-[#FF6600] rounded-[30px] flex items-center justify-around hover:bg-orange-500">
+                        <img src="img/icon1.png (1).svg" alt="">
+                        <h1 class="text-white font-bold">1257</h1>
+                    </div>
+                    <input type="checkbox" id="modalCheckbox" class="hidden">
+                    <label for="modalCheckbox" class="px-4 py-2 text-white rounded-md cursor-pointer ">
+                        <img class="relative right-[160px]" src="img/search-white.svg.svg" alt="">
+                    </label>
+                    <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-black bg-opacity-50">
+                    <div class="relative">
+                            <div class="bg-inherit rounded-lg shadow-lg relative">
+                            
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <input class="bg-transparent hover:outline-none text-white text-[50px] h-[100px] w-[200px] border-none" type="text" placeholder="Поиск">
+                                <img src="img/search-white.svg.svg" alt="">
+                            </div>
+                        </div>
+                        <label for="modalCheckbox" class=" absolute bottom-[250px] left-[500px] m-4 text-white rounded-full cursor-pointer">
+                            &times;
+                        </label>
+                    </div>
+                </div>
+                
+                <img class="relative right-[140px]" src="img/Vector (13).svg" alt="">
+                <h1 class="text-white text-[20px] font-bold relative right-[100px]">RU</h1>
+            </div>
+            </div>
+            <div class="w-[1350px] h-[700px] bg-[#1F4A99] flex items-center justify-center">
+                <h1 class="text-white text-[40px] w-[180px] relative bottom-[100px]">выиграйте квартиру с uzcard</h1>
+                <button class="text-white text-[10px] relative right-[170px] top-[80px]  font-bold w-[100px] h-[40px] rounded-[50px] flex items-center justify-center border-[3px] border-blue-700 hover:bg-blue-700 duration-500">Узнат больше</button>
+                <img class="w-[600px] h-[500px]" src="img/66443f2d24f8e612663777.png" alt=""> 
+            </div>
+        <div class="w-[1350px] h-[20px] bg-[#0B2557] flex items-center justify-center">
+            <img class="relative top-[100px]" src="img/Horizontal Divider.svg" alt="">
+        </div>
+        <div class="w-[1350px] h-[1200px] bg-[#0B2557] flex items-center justify-center ">
+            <div class="relative bottom-[320px] text-white">
+                <h1 class="text-[60px] font-light relative left-[360px]">Статистика</h1>
+                <h1 class="text                                                             -[30px] font-medium relative left-[360px]">Транзакции в минуту</h1>
+                <h1 class="text-[20px] font-sans relative left-[360px]">2024-07-05 07:54</h1>
+            </div>
+            <div class="w-[550px] h-[240px] rounded-[30px] mt-[30px] mr-[20px] relative  border border-[#1A599D] border-[4px] hover:shadow-[0_0_30px_rgba(255,255,255,1)] hover:border-white">
+                <img class=" relative left-[125px] top-[25px]" src="img/Img_margin (1).svg" alt="">
+                <h1 class="text-white text-[10px] relative left-[30px] font-mono">терминал</h1>
+                <h1 class="text-white relative left-[30px] font-bold text-[28px] font-weight-[900px]">1021</h1>
+                <img class="relative  top-[46px]" src="img/Vector (14).svg" alt="">
+            </div>
+            <div class="w-[550px] h-[240px] rounded-[30px] mt-[30px] mr-[20px] relative  border border-[#1A599D] border-[4px] hover:shadow-[0_0_30px_rgba(255,255,255,1)] hover:border-white"> 
+                <img class="w-[50px] relative left-[140px] top-[25px]" src="img/Img_margin (3).svg" alt="">
+                <h1 class="text-white text-[10px] relative left-[30px] top-[10px] font-mono">Банкоматы</h1>
+                <h1 class="text-white relative left-[30px] top-[10px] font-bold text-[28px] font-weight-[900px]">628</h1>
+                <img class="relative top-[65px]" src="img/Vector (15).svg" alt="">
+            </div>
+            <div class="w-[550px] h-[240px] rounded-[30px] mt-[30px] mr-[20px] relative border border-[#1A599D] border-[4px] hover:shadow-[0_0_30px_rgba(255,255,255,1)] hover:border-white">
+                <img class="w-[10px] relative left-[105px] top-[25px] w-[50px] h-[50px]" src="img/service.svg.svg" alt="">
+                <h1 class="text-white text-[9px] relative top-[30px] left-[30px] font-mono">Онлайн Оплаты</h1>
+                <h1 class="text-white relative left-[30px] top-[30px] font-bold text-[28px] font-weight-[900px]">2975</h1>
+                <img class=" relative  top-[70px]" src="img/Vector (17).svg" alt="">
+            </div>
+            <div class="w-[550px] h-[240px] rounded-[30px] mt-[30px] mr-[20px]  border border-[#1A599D] border-[4px] hover:shadow-[0_0_30px_rgba(255,255,255,1)] hover:border-white">
+                <img class=" w-[50px] relative left-[120px] top-[25px]" src="img/monitoring.svg" alt="">
+                <h1 class="w-[100px] text-white text-[14px] relative left-[30px] top-[10px] font-mono">ОБЩЕЕ КОЛ-ВО ТРАНЗАКЦИЙ</h1>
+                <h1 class="text-white relative left-[30px] top-[20px] font-bold text-[30px] font-weight-[900px]">4624</h1>
+                <img class="relative top-[40px] " src="img/graph4.svg (2).svg" alt="">
+            </div>
+            <div class="w-[1000px] h-[50px] border border-[#1D4692] relative right-[520px] top-[250px] rounded-[25px] flex items-center justify-center text-white font-bold hover:bg-blue-500 duration-500 ">
+                <img class="relative right-[10px] " src="img/location.svg fill.svg" alt="">
+                <h1>Расположение банкоматов</h1>
+            </div>
+        </div>
+        <div class="w-[1350px] h-[3200px] bg-[#0B2557] flex items-center justify-items-start">
+
+        </div>
+        <img class="relative bottom-[3500px] left-[660px]" src="img/Horizontal Divider.svg" alt="">
+        <div class="w-[1000px] h-[435px] relative bottom-[3300px] left-[680px]  items-center justify-center">
+            <div class="flex items-center justify-between">
+
+                <img src="img/Container (6).svg" alt="">
+                <img src="img/Container (8).svg" alt="">
+                <img src="img/Container (7).svg" alt="">
+                <img src="img/Container (9).svg" alt="">
+                <img src="img/Container (10).svg" alt="">
+            </div>
+            <div class="flex items-center justify-around relative top-[100px]">
+                <img src="img/Container (11).svg" alt="">
+                <img src="img/Container (12).svg" alt="">
+                <img src="img/Container (13).svg" alt="">
+                <img src="img/Container (14).svg" alt="">
+                <img src="img/Container (15).svg" alt="">
+            </div>
+            <div class="w-[223px] h-[56px] border border-[#1A599D] rounded-[55px] flex items-center justify-center relative left-[400px] top-[150px] hover:bg-blue-500 duration-500">
+                 <h1 class="text-white font-bold text-[20px]">все партнеры</h1>
+                </div>
+                <img class="relative top-[113px]" src="img/arrow-right-second.svg fill.svg" alt="">
+                <img class="relative top-[300px]" src="img/Horizontal Divider.svg" alt="">
+                <div class="flex">
+                    <div>
+                        <img class="relative top-[400px] w-[294px] h-[300px] rounded-[30px] border border-[#1A599D] border-[3px]" src="img/wake_card_news_ru.jpg" alt="">
+                        <div class="text-white font-bold relative top-[430px] hover:mt-11">
+                            <p class="text-[#1A599D] font-normal text-[20px] relative bottom-[10px]">14.05.2024</p>
+                            <h1>
+                                UZCARD дарит
+                            </h1>
+                            <h1>
+                                уникальный шанс
+                            </h1>
+                            <h1>
+                                выиграть квартиру в
+                            </h1>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="relative top-[400px]w-[294px] h-[300px] rounded-[30px] border border-[#1A599D] border-[3px]" src="img/uzcardkids1.png" alt="">
+                        <div class="text-white font-bold relative top-[430px] left-[100px]">
+                            <p class="text-[#1A599D] font-normal text-[20px] relative bottom-[10px]">30.04.2024</p>
+                            <h1>
+                                Проезд в обшесом
+                            </h1>
+                            <h1>
+                                транспорте города
+                            </h1>
+                            <h1>
+                                Ташкент всего 990 сум с
+                            </h1>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="relative top-[400px] left-[200px] w-[294px] h-[300px] rounded-[20px] border border-[#1A599D] border-[3px]" src="img/attto.jpg" alt="">
+                        <div class="text-white font-bold relative top-[430px] left-[200px]">
+                            <p class="text-[#1A599D] font-normal text-[20px] relative bottom-[10px]">30.04.2024</p>
+                            <h1>
+                                Стала доступна скидка
+                            </h1>
+                            <h1>
+                                проезд при оплате
+                            </h1>
+                            <h1>
+                                картами UZCARD в ряде
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <img class="relative top-[600px]" src="img/Horizontal Divider.svg" alt="">
+                <div class="text-blue-200 relative top-[900px] cursor-pointer">
+                    <h1 class="text-white">Держателям карт</h1>
+                    <p class="mb-[20px]">Онлайн-операции</p>
+                    <p class="mb-[20px]">Услуги в банкоматах</p>
+                    <p class="mb-[20px]">Операции с картой</p>
+                    <p class="mb-[20px]">Карты</p>
+                    <p class="mb-[20px]">Uzcard Pay</p>                                              
+                    <p class="mb-[20px]">Колл-центр</p>
+                    <p class="mb-[20px]">Архив</p>
+                </div>
+                <div class="text-blue-200 relative top-[570px] left-[300px] w-[200px] cursor-pointer">
+                    <h1 class="text-white mb-[20px]">О компании</h1>
+                    <p class="mb-[20px]">О нас</p>
+                    <p class="mb-[20px]">История</p>
+                    <p class="mb-[20px]">Услуги</p>
+                    <p class="mb-[20px]">Партнеры</p>
+                    <p class="mb-[20px]">Лицензии</p>
+                    <p class="mb-[20px]">Горячая линия UZCARD</p>
+                    <p class="mb-[20px]">Политика конфиденциальности</p>
+                    <p class="mb-[20px]">Политика конфиденциальности Uzcard Pay</p>
+                    <p class="mb-[20px]">Пользовательское соглашение по использованию Uzcard Pay</p>
+                </div>
+                <div class="text-blue-200 relative top-[560px] left-[300px] w-[200px] cursor-pointer">
+                    <h1 class="text-white font-mono text-[16px]">Банкам и партнерам</h1>
+                    <p class="mb-[20px]">Об UZCARD</p>
+                    <p  class="mb-[20px]">Заявка на подключение</p>
+                    <p class="mb-[20px]">Документы</p>
+                    <p class="mb-[20px]">Тарифы</p>
+                    <p class="mb-[20px]">Процедура подключения к SV-GATE</p>
+                    <p class="mb-[20px]">Параметры размещения логотипа</p>
+                    <p class="mb-[20px]">Инструкции и рекомендации</p>
+                    <p class="mb-[20px]">Торговый эквайринг</p>
+                    <p class="mb-[20px]">Содержимое карты</p>
+                    <p class="mb-[20px]">Акции</p>
+                    <p class="mb-[20px]">Архив</p>
+                </div>
+                <div class="text-blue-200 relative left-[600px] bottom-[570px] cursor-pointer">
+                    <h1 class="text-white font-mono text-[16px] mb-[20px]">Пресс-служба</h1>
+                    <p class="mb-[20px]">Новости UZCARD</p>
+                    <p class="mb-[20px]">Пресс-релизы</p>
+                    <p class="mb-[20px]">Объявления о закупках</p>
+                    <p class="mb-[20px]">Мероприятия</p>
+                    <p class="mb-[20px]">Галерея</p>
+                    <p class="mb-[20px]">Видео</p>
+                </div>
+                <div class="text-blue-200 relative left-[600px] bottom-[400px] cursor-pointer">
+                    <h1 class="text-white font-mono mb-[20px]">Для бизнеса</h1>
+                    <p  class="mb-[20px]">POS - терминалы</p>
+                    <p class="mb-[20px]">Интеграция с онлайн-ККМ</p>
+                </div>
+                <div class="text-white font-bold relative left-[1000px] bottom-[1000px] text-blue-200 cursor-pointer"> 
+                    <h1 class="mb-[30px]">Галерея</h1>
+                    <h1 class="mb-[30px]">Банкоматы</h1>
+                    <h1 class="mb-[30px]">Контакты</h1>
+                    <h1 class="mt-[350px]">Карьера</h1>
+                </div>
+                <h1 class="text-white font-bold text-[20px] relative bottom-[200px] right-[70px]">Свяжитесь с нами</h1>
+                <p class="text-blue-200 w-[183px] relative bottom-[180px] right-[70px]">По вопросам или
+                    предложениям</p>
+                    <div class="w-[192px] h-[62px] border border-[#FF6600] rounded-[50px] flex items-center justify-around relative bottom-[150px] right-[70px] hover:bg-orange-400 duration-500">
+                        <img src="img/phone-white.svg.svg" alt="">
+                        <h1 class="text-white font-bold relative right-[10px]">Заказать звонок</h1>
+                    </div>
+                    <div class="relative left-[250px] bottom-[340px] text-blue-200">
+                    <h1 class="font-bold text-white relative top-[7px] text-[23px]">71 200 28 28</h1>
+                    <p class="w-[200px] relative top-[25px]">Звонок бесплатный для
+                        Узбекистана</p>
+                        <p class="w-[300px] relative top-[50px]">100011, Узбекистан, г. Ташкент,
+                            Шайхонтохурский р., ул. Абдулла
+                            Кодирий, 78</p>
+                            h1
+                </div>   
+                <div class="relative bottom-[500px] left-[650px] text-white ">
+                    <h1 class="font-bold ">info@uzcard.uz</h1>
+                    <p class="mb-[20px] w-[200px]">Для приема официальных обращений</p>
+                    <h1 class="font-bold">help@uzcard.uz</h1>
+                    <p class="mb-[20px] w-[200px]">Служба поддержки и информирования</p>
+                    <h1 class="font-bold">uzcard@exat.uz</h1>
+                    <p class="w-[150px]">Межведомственная электронная почта</p>
+                </div>      
+                <div class="relative bottom-[760px] left-[1000px]">
+                    <h1 class="text-white font-bold ">Социальные сети</h1><br>
+                    <p class="w-[300px] text-blue-200">Подпишитесь и будьте в курсе всех новостей</p>
+                </div> 
+                <img class="relative bottom-[740px] left-[990px]" src="img/Container (19).svg" alt="">
+                <img class="relative bottom-[600px] left-[1100px]" src="img/pci.png (1).svg" alt="">
+                <h1 class="text-white font-bold relative bottom-[640px]">Copyright © 2004-2024 UZCARD. Все права защищены.</h1>
+            </div>
+          
+    </div>
+    
+</body>
+</html>
